@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product Container */
+.product-container {
+    background-color: #1e1e1e; /* Slightly lighter dark container */
+    border: 1px solid #333333; /* Subtle border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Product Hover Effect */
+.product-container:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Image Container */
+.img-container {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+    background-color: #2d2d2d; /* Placeholder background */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images scale properly */
+    display: block;
+}
+
+/* Product Data */
+.product-data {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Product Name */
+.product-data h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text */
+}
+
+/* Product Price */
+.product-data p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #00adb5; /* Cyan highlight for price */
+}
+
+/* Product Description */
+.product-data p:last-of-type {
+    color: #b0b0b0; /* Light gray text for description */
+    font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .product-container {
+        width: 100%; /* Full width on small screens */
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Artist Details</title>
+  <link rel="stylesheet" th:href="@{/edit_artist.css}">
+
+</head>
+<body>
+
+<header>
+  <h2>Edit Your Details</h2>
+</header>
+
+<div class="container">
+  <h1>Edit Details for <span th:text="${artist.artistName}">User</span></h1>
+
+  <!-- Form for editing user details -->
+  <form action="/update_artist_details" method="POST" th:object="${artist}">
+
+    <input type="hidden" name="id" th:value="${artist.id}">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name" th:value="${artist.artistName}" required>
+
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="artistEmail" th:value="${artist.artistEmail}" required>
+
+    <label for="artistLogin">Login (UserName):</label>
+    <input type="text" id="artistLogin" name="artistLogin" th:value="${artist.artistLogin}" required>
+
+    <label for="artistPassword">Name:</label>
+    <input type="text" id="artistPassword" name="artistPassword" th:value="${artist.artistPassword}" required>
+
+
+
+    <!-- Submit Button -->
+    <button type="submit">Save Changes</button>
+  </form>
+</div>
+
+</body>
+</html>

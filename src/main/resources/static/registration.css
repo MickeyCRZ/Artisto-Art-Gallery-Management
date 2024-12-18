@@ -1,0 +1,100 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #fff; /* White background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Limiting the width */
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for the title */
+}
+
+/* Label Styling */
+label {
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Input Fields Styling */
+input[type="text"], input[type="password"], input[type="email"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #4CAF50; /* Highlight fields with green border */
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Link Styling */
+.login-link {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.login-link a {
+    color: #4CAF50; /* Matching green for the login link */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size for heading */
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], input[type="file"], button {
+        font-size: 1rem;
+    }
+}

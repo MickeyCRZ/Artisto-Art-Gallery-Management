@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login for Artist or Customer</title>
+    <style>
+        /* Page styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .artist-btn {
+            background-color: #4CAF50; /* Green */
+        }
+
+        .artist-btn:hover {
+            background-color: #45a049;
+        }
+
+        .customer-btn {
+            background-color: #2196F3; /* Blue */
+        }
+
+        .customer-btn:hover {
+            background-color: #1E88E5;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Login as:</h1>
+    <!-- Buttons -->
+    <a href="/login/artist" class="button artist-btn">Artist</a>
+    <a href="/login/user" class="button customer-btn">Customer</a>
+</div>
+<div class="register-link">
+    <p>Don't have an account? <a href="/registration_page.html">Register here</a></p>
+</div>
+</body>
+</html>

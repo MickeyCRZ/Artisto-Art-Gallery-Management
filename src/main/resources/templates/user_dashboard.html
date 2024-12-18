@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" th:href="@{/user_dashboard.css}">
+</head>
+<body>
+<div class="head">
+    <h1>Artisto</h1>
+</div>
+
+<h2 th:text="'Welcome ' + ${user.firstName}">Welcome User</h2>
+<div>
+    <h2>Product Catalog</h2>
+</div>
+
+<div class="container">
+
+
+    <div th:each="artwork : ${artworks}" class="product-container">
+        <div class="img-container">
+            <img th:src="@{'/artwork/image/' + ${artwork.id}}">
+        </div>
+        <div class="product-data">
+            <h3 th:text="${artwork.artName}">Name</h3>
+            <p th:text="${artwork.price}">Price</p>
+            <p th:text="${artwork.description}">Description</p>
+        </div>
+</div>
+
+</body>
+</html>
